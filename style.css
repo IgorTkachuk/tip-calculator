@@ -69,6 +69,9 @@ body {
           border-color: var(--tealish);
           outline: none;
         }
+        &::placeholder{
+          color: var(--salt-blue);
+        }
       }
     }
     .right-side {
