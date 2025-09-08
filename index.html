@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" href="style.css">
-  
-  <title>Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
 
-</head>
-<body>
-  <section class="container">
-    <header>
-      <img src="./images/logo.svg" alt="logo">
-    </header>
-    <main>
-      <form action="" method="get">
-        <div class="left-side">
-          <label for="bill">
-            Bill
-            <input type="text" class="bill" id="bill" placeholder="0">
-          </label>
-          <label for="numberofpeople">
-            Number of People
-            <input type="text" class="numberofpeople" id="numberofpeople" placeholder="0">
-          </label>
-        </div>
-        <div class="right-side">
-          <div class="tip-ammount">
-            <div>
-              <span>Tip Amount</span>
-              <span>/ person</span>
-            </div>
-            <div class="tip-amount-value">$0.00</div>
+    <script src="./index.js"></script>
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <img src="./images/logo.svg" alt="logo" />
+      </header>
+      <main>
+        <form action="" method="get">
+          <div class="left-side">
+            <label for="bill">
+              Bill
+              <input type="text" class="bill" id="bill" placeholder="0" />
+            </label>
+
+            <label>
+              Select Tip %
+              <div class="tip">
+                <label for="tip5" class="tip-marker"
+                  >5%
+                  <input type="radio" name="tip" id="tip5" checked />
+                </label>
+                <label for="tip10" class="tip-marker"
+                  >10%
+                  <input type="radio" name="tip" id="tip10" />
+                </label>
+                <label for="tip15" class="tip-marker"
+                  >15%
+                  <input type="radio" name="tip" id="tip15" />
+                </label>
+                <label for="tip25" class="tip-marker"
+                  >25%
+                  <input type="radio" name="tip" id="tip25" />
+                </label>
+                <label for="tip50" class="tip-marker"
+                  >50%
+                  <input type="radio" name="tip" id="tip50" />
+                </label>
+                <label for="tip-custom" class="tip-custom">
+                  <input type="text" placeholder="Custom" />
+                  <input type="radio" name="tip" id="tip-custom" />
+                </label>
+              </div>
+            </label>
+
+            <label for="numberofpeople">
+              Number of People
+              <input
+                type="text"
+                class="numberofpeople"
+                id="numberofpeople"
+                placeholder="0"
+              />
+            </label>
           </div>
-          <div class="total">
-            <div>
-              <span>Total</span>
-              <span>/ person</span>
+          <div class="right-side">
+            <div class="tip-ammount">
+              <div>
+                <span>Tip Amount</span>
+                <span>/ person</span>
+              </div>
+              <div class="tip-amount-value">$0.00</div>
             </div>
-            <div class="totoal-value">$0.00</div>
+            <div class="total">
+              <div>
+                <span>Total</span>
+                <span>/ person</span>
+              </div>
+              <div class="totoal-value">$0.00</div>
+            </div>
+            <button type="reset">reset</button>
           </div>
-          <button type="reset">reset</button>
-        </div>
-      </form>
-    </main>
-  </section>
-
-
-
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-</body>
+        </form>
+      </main>
+    </section>
+  </body>
 </html>
