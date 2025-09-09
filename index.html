@@ -25,17 +25,19 @@
       <main>
         <form action="" method="get">
           <div class="left-side">
-            <label for="bill">
+            <label class="bill-label bglabel">
               Bill
+              <span>Can’t be zero</span>
               <input type="text" class="bill" id="bill" placeholder="0" />
             </label>
 
-            <label>
+            <label class="bglabel">
               Select Tip %
+              <span>Can’t be zero</span>
               <div class="tip">
                 <label for="tip5" class="tip-marker"
                   >5%
-                  <input type="radio" name="tip" id="tip5" checked />
+                  <input type="radio" name="tip" id="tip5" />
                 </label>
                 <label for="tip10" class="tip-marker"
                   >10%
@@ -60,8 +62,9 @@
               </div>
             </label>
 
-            <label for="numberofpeople">
+            <label class="numberofpeople-label bglabel">
               Number of People
+              <span>Can’t be zero</span>
               <input
                 type="text"
                 class="numberofpeople"

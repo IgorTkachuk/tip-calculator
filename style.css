@@ -8,6 +8,7 @@
   --everest: #9fe8df;
   --distant-horizon: #f3f9fa;
   --uniform-gree-grey: #5e7a7d;
+  --dusty-orange: #e17052;
 }
 body,
 h1,
@@ -49,6 +50,7 @@ body {
     width: 100%;
     box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
     border-radius: 25px;
+
     .left-side {
       width: 379px;
       margin: 45px 16px 48px 48px;
@@ -75,6 +77,46 @@ body {
         &::placeholder {
           color: var(--salt-blue);
         }
+      }
+
+      .bglabel {
+        position: relative;
+      }
+
+      .bglabel::before {
+        content: "";
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+        width: 36px;
+        height: 36px;
+
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .bill-label::before {
+        background-image: url("./images/icon-dollar.svg");
+      }
+
+      .numberofpeople-label::before {
+        background-image: url("./images/icon-person.svg");
+      }
+
+      .bglabel span {
+        display: none;
+      }
+
+      .bglabel:has(.error) span {
+        color: var(--dusty-orange);
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline;
+      }
+
+      .bglabel .error {
+        border-color: var(--dusty-orange);
       }
     }
     .right-side {
