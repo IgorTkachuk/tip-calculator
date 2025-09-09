@@ -28,7 +28,13 @@
             <label class="bill-label bglabel">
               Bill
               <span>Can’t be zero</span>
-              <input type="text" class="bill" id="bill" placeholder="0" />
+              <input
+                name="bill"
+                type="text"
+                class="bill"
+                id="bill"
+                placeholder="0"
+              />
             </label>
 
             <label class="bglabel">
@@ -37,27 +43,32 @@
               <div class="tip">
                 <label for="tip5" class="tip-marker"
                   >5%
-                  <input type="radio" name="tip" id="tip5" />
+                  <input type="radio" name="tip" id="tip5" value="5" />
                 </label>
                 <label for="tip10" class="tip-marker"
                   >10%
-                  <input type="radio" name="tip" id="tip10" />
+                  <input type="radio" name="tip" id="tip10" value="10" />
                 </label>
                 <label for="tip15" class="tip-marker"
                   >15%
-                  <input type="radio" name="tip" id="tip15" />
+                  <input type="radio" name="tip" id="tip15" value="15" />
                 </label>
                 <label for="tip25" class="tip-marker"
                   >25%
-                  <input type="radio" name="tip" id="tip25" />
+                  <input type="radio" name="tip" id="tip25" value="25" />
                 </label>
                 <label for="tip50" class="tip-marker"
                   >50%
-                  <input type="radio" name="tip" id="tip50" />
+                  <input type="radio" name="tip" id="tip50" value="50" />
                 </label>
                 <label for="tip-custom" class="tip-custom">
-                  <input type="text" placeholder="Custom" />
-                  <input type="radio" name="tip" id="tip-custom" />
+                  <input type="text" placeholder="Custom" name="custom" />
+                  <input
+                    type="radio"
+                    name="tip"
+                    id="tip-custom"
+                    value="custom"
+                  />
                 </label>
               </div>
             </label>
@@ -70,6 +81,7 @@
                 class="numberofpeople"
                 id="numberofpeople"
                 placeholder="0"
+                name="numberofpeople"
               />
             </label>
           </div>
@@ -86,10 +98,11 @@
                 <span>Total</span>
                 <span>/ person</span>
               </div>
-              <div class="totoal-value">$0.00</div>
+              <div class="total-value">$0.00</div>
             </div>
-            <button type="reset">reset</button>
+            <button type="reset" disabled>reset</button>
           </div>
+          <button type="submit" style="display: none"></button>
         </form>
       </main>
     </section>

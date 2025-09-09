@@ -9,6 +9,7 @@
   --distant-horizon: #f3f9fa;
   --uniform-gree-grey: #5e7a7d;
   --dusty-orange: #e17052;
+  --bath-green: #0d686d;
 }
 body,
 h1,
@@ -196,6 +197,10 @@ body {
 
     input[type="radio"] {
       display: none;
+    }
+
+    button[type="reset"][disabled] {
+      background-color: var(--bath-green);
     }
   }
 }
